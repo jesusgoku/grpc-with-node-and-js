@@ -10,6 +10,7 @@
     "grpc": "^1.24.2"
   },
   "scripts": {
+    "start": "node -r dotenv/config -r esm src/server.js",
     "code:check": "yarn code:lint; yarn code:format --check",
     "code:clean": "yarn code:lint --fix; yarn code:format --write",
     "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\"",
