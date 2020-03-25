@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "esm": "^3.2.25",
-    "google-protobuf": "^3.11.4",
-    "grpc": "^1.24.2"
-  },
   "scripts": {
     "start": "node -r dotenv/config -r esm src/server.js",
     "code:check": "yarn code:lint; yarn code:format --check",
@@ -16,6 +10,12 @@
     "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\"",
     "code:format": "prettier './src/**/**.{js,jsx,ts,tsx}'",
     "code:check:rules": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "google-protobuf": "^3.11.4",
+    "grpc": "^1.24.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
