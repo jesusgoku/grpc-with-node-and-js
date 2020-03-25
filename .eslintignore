@@ -1,2 +1,3 @@
 serviceWorker.*
 *.d.ts
+src/proto/**/*_pb.js
