@@ -2,5 +2,11 @@
   "name": "grpc-js",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "google-protobuf": "^3.11.4",
+    "grpc": "^1.24.2"
+  }
 }
