@@ -1,6 +1,7 @@
 import * as grpc from 'grpc';
 
 import { PORT } from './config';
+import logger from './logger';
 import * as greeterHandler from './handlers/greeter';
 
 (() => {
@@ -13,11 +14,11 @@ import * as greeterHandler from './handlers/greeter';
   // define the host/port for server
   server.bindAsync(`0.0.0.0:${PORT}`, grpc.ServerCredentials.createInsecure(), (err, port) => {
     if (err != null) {
-      console.error(err);
+      logger.error(err);
       return;
     }
 
-    console.log(`gRPC listening on ${port}`);
+    logger.info(`gRPC listening on: 0.0.0.0:${port}`);
   });
 
   // start the gRPC server
