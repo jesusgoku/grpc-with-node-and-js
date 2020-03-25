@@ -9,7 +9,7 @@ GRPC_TOOLS_NODE_PROTOC="./node_modules/.bin/grpc_tools_node_protoc"
 for f in ./src/proto/*; do
 
   # skip the non proto files
-  if [ "$(basename "$f")" == "index.js" ]; then
+  if [ ! -d "${f}" ]; then
       continue
   fi
 
