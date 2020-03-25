@@ -5,8 +5,10 @@
   "license": "MIT",
   "scripts": {
     "start": "node -r dotenv/config -r esm src/server.js",
+    "start:mali": "node -r dotenv/config -r esm src/server.mali.js",
     "start:client": "node -r dotenv/config -r esm src/client.js",
     "dev": "nodemon -r dotenv/config -r esm src/server.js",
+    "dev:mali": "nodemon -r dotenv/config -r esm src/server.mali.js",
     "dev:client": "nodemon -r dotenv/config -r esm src/client.js",
     "code:check": "yarn code:lint; yarn code:format --check",
     "code:clean": "yarn code:lint --fix; yarn code:format --write",
