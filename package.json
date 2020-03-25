@@ -5,7 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node -r dotenv/config -r esm src/server.js",
+    "start:client": "node -r dotenv/config -r esm src/client.js",
     "dev": "nodemon -r dotenv/config -r esm src/server.js",
+    "dev:client": "nodemon -r dotenv/config -r esm src/client.js",
     "code:check": "yarn code:lint; yarn code:format --check",
     "code:clean": "yarn code:lint --fix; yarn code:format --write",
     "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\"",
