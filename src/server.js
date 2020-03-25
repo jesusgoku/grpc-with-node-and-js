@@ -1,8 +1,7 @@
 import * as grpc from 'grpc';
 
+import { PORT } from './config';
 import * as greeterHandler from './handlers/greeter';
-
-const PORT = process.env.PORT || 50051;
 
 (() => {
   // create a new gRPC server
